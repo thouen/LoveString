@@ -8,7 +8,7 @@ namespace LoveString
 {
     public class EncodeHelper
     {
-        private static string FormatHexString(byte[] bytes, string delimiter = " ")
+        public static string FormatHexString(byte[] bytes, string delimiter = " ")
         {
             string hexString = BitConverter.ToString(bytes).Replace("-", delimiter);
             return hexString;

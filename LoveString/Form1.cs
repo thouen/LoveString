@@ -28,9 +28,10 @@ namespace LoveString
             this.tb_Gb18030.Text = EncodeHelper.Utf8ToUtfGB18030(originalTextUtf8Bytes);
             this.tb_Gb2312.Text = EncodeHelper.Utf8ToUtfGB2312(originalTextUtf8Bytes);
             this.tb_Gbk.Text = EncodeHelper.Utf8ToUtfGBK(originalTextUtf8Bytes);
-            this.tb_Hex.Text = BitConverter.ToString(originalTextUtf8Bytes).Replace("-", " ");
+            this.tb_Hex.Text = BitConverter.ToString(originalTextUtf8Bytes).Replace("-", "");
             this.tb_UniBigEnd.Text = EncodeHelper.Utf8ToBigEndianUnicode(originalTextUtf8Bytes);
             this.tb_Unicode.Text = EncodeHelper.Utf8ToUnicode(originalTextUtf8Bytes);
+            this.tb_Utf8.Text = EncodeHelper.FormatHexString(originalTextUtf8Bytes);
             this.tb_Utf7.Text = EncodeHelper.Utf8ToUtf7(originalTextUtf8Bytes);
             this.tb_Utf32.Text = EncodeHelper.Utf8ToUtf32(originalTextUtf8Bytes);
             //加密
